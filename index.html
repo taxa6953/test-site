@@ -1,97 +1,154 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سازمان مدیریت بحران</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اداره کل مدیریت بحران</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+    }
+
+    .header-text {
+      text-align: right;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header-text h2 {
+      margin: 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .search-box {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #fff;
+      max-width: 400px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: 16px;
+      padding-right: 10px;
+    }
+
+    .search-box img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .section-title {
+      margin: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-section {
+      display: flex;
+      overflow-x: auto;
+      padding: 0 20px 20px;
+      gap: 15px;
+    }
+
+    .card {
+      min-width: 160px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- هدر اصلی سایت -->
-    <header class="main-header">
-        <div class="header-content">
-            <div class="header-text">
-                <h1>سازمان مدیریت بحران</h1>
-                <h2>استان سیستان و بلوچستان</h2>
-            </div>
-        </div>
-    </header>
+  <!-- Header -->
+  <div class="header">
+    <img src="asset/Logo.png" class="logo" alt="لوگو">
+    <div class="header-text">
+      <h1>اداره کل مدیریت بحران</h1>
+      <h2>استان سیستان و بلوچستان</h2>
+    </div>
+  </div>
 
-    <!-- باکس جست‌وجو -->
-    <section class="search-section">
-        <div class="search-box">
-            <input type="text" placeholder="جست‌وجو">
-            <button>
-             <img src="search.gif" alt="جستجو" class="search-gif">   
-            </button>
-        </div>
-    </section>
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" placeholder="جست و جو...">
+    <img src="asset/search.gif" alt="جست‌وجو">
+  </div>
 
-    <!-- دسترسی سریع -->
-    <section class="quick-access">
-        <div class="quick-item">زلزله</div>
-        <div class="quick-item">آتش‌نشانی</div>
-        <div class="quick-item">سیل</div>
-    </section>
+  <!-- محبوب‌ترین مقاصد -->
+  <div class="section-title">مقاصد محبوب</div>
+  <div class="card-section">
+    <div class="card">
+      <img src="cards/card1/image1.png" alt="تصویر 1">
+      <div class="card-title">ریو دو ژانیرو</div>
+      <div class="card-text">برزیل</div>
+    </div>
+    <div class="card">
+      <img src="cards/card2/image1.png" alt="تصویر 2">
+      <div class="card-title">پاتاگونیا</div>
+      <div class="card-text">شیلی</div>
+    </div>
+  </div>
 
-    <hr>
-
-    <!-- بخش نمایش محتوای هر قسمت -->
-    <section class="content-section">
-        <div class="section-header">
-            <h3>عنوان بخش</h3>
-            <a href="zelzele/index.html" class="more-button">
-                <img src="more.gif" alt="بیشتر" class="more-icon"> بیشتر
-            </a>
-        </div>
-
-        <!-- اسکرول افقی کارت‌ها -->
-        <div class="card-scroll" id="section1">
-            <div class="card">
-                <img src="images/rio.jpg" alt="ریو" />
-                <h4>ریو دو ژانیرو</h4>
-                <p>برزیل</p>
-            </div>
-            <div class="card">
-                <img src="images/patagonia.jpg" alt="پاتاگونیا" />
-                <h4>پاتاگونیا</h4>
-                <p>شیلی</p>
-            </div>
-            <div class="card">
-                <img src="images/tokyo.jpg" alt="توکیو" />
-                <h4>توکیو</h4>
-                <p>ژاپن</p>
-            </div>
-            <div class="card">
-                <img src="images/paris.jpg" alt="پاریس" />
-                <h4>پاریس</h4>
-                <p>فرانسه</p>
-            </div>
-            <div class="card">
-                <img src="images/berlin.jpg" alt="برلین" />
-                <h4>برلین</h4>
-                <p>آلمان</p>
-            </div>
-            <div class="card">
-                <img src="images/newyork.jpg" alt="نیویورک" />
-                <h4>نیویورک</h4>
-                <p>آمریکا</p>
-            </div>
-            <div class="card">
-                <img src="images/dubai.jpg" alt="دبی" />
-                <h4>دبی</h4>
-                <p>امارات متحده عربی</p>
-            </div>
-        </div>
-
-        <!-- دکمه "بیشتر" برای مشاهده کارت‌های بیشتر -->
-        <div class="more-cards-section">
-            <a href="zelzele/index.html" class="more-button">
-                <img src="more.gif" alt="بیشتر" class="more-icon"> بیشتر
-            </a>
-        </div>
-    </section>
+  <!-- بالاترین امتیازها -->
+  <div class="section-title">بالاترین امتیازها</div>
+  <div class="card-section">
+    <div class="card">
+      <img src="cards/card3/image1.png" alt="تصویر 3">
+      <div class="card-title">توکیو</div>
+      <div class="card-text">ژاپن</div>
+    </div>
+    <div class="card">
+      <img src="cards/card1/image1.png" alt="تصویر 4">
+      <div class="card-title">پاریس</div>
+      <div class="card-text">فرانسه</div>
+    </div>
+  </div>
 
 </body>
 </html>
