@@ -1,0 +1,65 @@
+درصفحه اصلی در پایان تگ <body> این کد رو اضافه کن 
+
+<ul id="suggestions" style="
+  list-style: none;
+  margin: 0 20px;
+  padding: 0;
+  max-width: 400px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+"></ul>
+
+<script>
+  const searchInput = document.querySelector('.search-box input');
+  const searchIcon = document.querySelector('.search-box img');
+  const suggestionsBox = document.getElementById('suggestions');
+
+  const titles = [
+    "زلزله", "سیل", "آتش نشانی", "طوفان", "عنوان کارت ١", "عنوان کارت ٢", "عنوان کارت ۴", 
+    "عنوان پوشش ١", "عنوان پوشش ٢", "عنوان پوشش ٣"
+  ];
+
+  searchInput.addEventListener('input', () => {
+    const input = searchInput.value.trim();
+    suggestionsBox.innerHTML = '';
+
+    if (input === '') {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+
+    const filtered = titles.filter(title => title.includes(input));
+    if (filtered.length > 0) {
+      filtered.forEach(title => {
+        const li = document.createElement('li');
+        li.textContent = title;
+        li.style.padding = '8px 12px';
+        li.style.cursor = 'pointer';
+        li.addEventListener('click', () => {
+          window.location.href = `search/index.html?title=${encodeURIComponent(title)}`;
+        });
+        suggestionsBox.appendChild(li);
+      });
+      suggestionsBox.style.display = 'block';
+    } else {
+      suggestionsBox.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search-box') && e.target !== suggestionsBox) {
+      suggestionsBox.style.display = 'none';
+    }
+  });
+
+  searchIcon.addEventListener('click', () => {
+    const input = searchInput.value.trim();
+    if (input) {
+      window.location.href = `search/index.html?title=${encodeURIComponent(input)}`;
+    }
+  });
+</script>
