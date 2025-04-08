@@ -1,165 +1,124 @@
-/* تنظیمات کلی */
+/* استایل کلی صفحه */
 body {
-    font-family: Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-    background-color: #f9f9f9;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
 }
 
-.main-header {
-    background-color: #eaeaea;
-    padding: 20px;
+/* نوار هدر */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* لوگو سمت چپ */
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+/* متن هدر راست‌چین */
+.header-text {
+  text-align: right;
 }
 
 .header-text h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
+  margin: 0;
+  font-size: 24px;
 }
 
 .header-text h2 {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 5px 0 0 0;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
 }
 
-.header-logo img {
-    width: 60px;
-    height: 60px;
-}
-
-/* باکس جست‌وجو */
-.search-section {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
+/* جعبه جست‌وجو */
 .search-box {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    padding: 5px 15px;
-    background-color: #fff;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  max-width: 400px;
 }
 
 .search-box input {
-    border: none;
-    outline: none;
-    font-size: 16px;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 16px;
+  padding-right: 10px;
 }
 
-.search-box button {
-    background: none;
-    border: none;
-    cursor: pointer;
+.search-box img {
+  width: 24px;
+  height: 24px;
 }
 
-.search-gif {
-    width: 24px;
-    height: 24px;
+/* باکس‌های فیلتر سریع */
+.quick-filters {
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 20px;
+  flex-wrap: wrap;
 }
 
-/* دسترسی سریع */
-.quick-access {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
+.filter-box {
+  background-color: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.quick-item {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+.filter-box:hover {
+  background-color: #d0d0d0;
 }
 
-/* بخش محتوا */
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-}
-
-.section-header h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.more-button {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-}
-
-.more-button .more-icon {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
+/* عنوان بخش‌ها */
+.section-title {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* کارت‌ها */
-.card-scroll {
-    display: flex;
-    overflow-x: scroll;
-    gap: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+.card-section {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 20px 20px;
+  gap: 15px;
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    width: 200px;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+  min-width: 160px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex-shrink: 0;
 }
 
 .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.card h4 {
-    font-size: 16px;
-    margin: 10px 0 5px;
+.card-title {
+  font-weight: bold;
+  margin-top: 8px;
 }
 
-.card p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* دکمه بیشتر */
-.more-cards-section {
-    display: flex;
-    justify-content: center;
-}
-
-.more-button {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 14px;
-}
-
-.more-button .more-icon {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
+.card-text {
+  font-size: 14px;
+  color: #666;
 }
