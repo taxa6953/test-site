@@ -62,11 +62,9 @@ body {
     border: none;
     cursor: pointer;
 }
-
-.search-box img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+.search-gif {
+    width: 24px;
+    height: 24px;
 }
 
 /* دسترسی سریع */
