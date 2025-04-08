@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>اداره کل مدیریت بحران</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdn.fontcdn.ir">
+  <link rel="stylesheet" href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css">
 </head>
 <body>
 
-  <!-- هدر اصلی صفحه -->
+  <!-- هدر -->
   <div class="header">
     <div class="header-text">
       <h1>اداره کل مدیریت بحران</h1>
@@ -17,49 +19,46 @@
     <img src="Logo.png" class="logo" alt="لوگو" />
   </div>
 
-  <!-- جعبه جست‌وجو -->
+  <!-- جست‌وجو -->
   <div class="search-box">
     <input type="text" placeholder="جست و جو..." />
-    <img src="search.gif" alt="آیکون جست‌وجو" />
+    <img src="search.gif" alt="جست‌وجو" />
   </div>
 
-  <!-- فیلتر سریع - باکس‌های باریک -->
+  <!-- فیلتر سریع -->
   <div class="quick-filters">
     <div class="filter-box">زلزله</div>
     <div class="filter-box">سیل</div>
     <div class="filter-box">طوفان</div>
-    <div class="filter-box">رانش زمین</div>
     <div class="filter-box">آتش‌سوزی</div>
+    <div class="filter-box">رانش زمین</div>
   </div>
 
-  <!-- مثال کارت‌ها: بخش اول -->
-  <div class="section-title">مقاصد محبوب</div>
+  <!-- بخش کارت‌ها با گزینه بیشتر -->
+  <div class="section-header">
+    <div class="section-title">مقاصد محبوب</div>
+    <a href="popular.html" class="more-button">
+      بیشتر <img src="more.gif" alt="بیشتر" />
+    </a>
+  </div>
+
   <div class="card-section">
     <div class="card">
       <img src="cards/card1/image1.png" alt="تصویر 1" />
-      <div class="card-title">ریو دو ژانیرو</div>
-      <div class="card-text">برزیل</div>
+      <div class="card-title">تهران</div>
+      <div class="card-text">زلزله‌خیز</div>
     </div>
     <div class="card">
       <img src="cards/card2/image1.png" alt="تصویر 2" />
-      <div class="card-title">پاتاگونیا</div>
-      <div class="card-text">شیلی</div>
+      <div class="card-title">چابهار</div>
+      <div class="card-text">سیل‌های فصلی</div>
     </div>
-  </div>
-
-  <!-- بخش دوم کارت‌ها -->
-  <div class="section-title">بالاترین امتیازها</div>
-  <div class="card-section">
     <div class="card">
       <img src="cards/card3/image1.png" alt="تصویر 3" />
-      <div class="card-title">توکیو</div>
-      <div class="card-text">ژاپن</div>
+      <div class="card-title">زاهدان</div>
+      <div class="card-text">طوفان شن</div>
     </div>
-    <div class="card">
-      <img src="cards/card1/image1.png" alt="تصویر 4" />
-      <div class="card-title">پاریس</div>
-      <div class="card-text">فرانسه</div>
-    </div>
+    <!-- کارت‌های دیگر دیده نمی‌شن مگر در صفحه بیشتر -->
   </div>
 
 </body>
