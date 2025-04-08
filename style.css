@@ -1,1 +1,122 @@
+/* تنظیمات کلی */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+
+.main-header {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-text h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+
+.header-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/* باکس جست‌وجو */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* دسترسی سریع */
+.quick-access {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.quick-item {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* بخش محتوا */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.more-button {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: calc(25% - 10px);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
 
