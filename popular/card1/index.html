@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مدیریتشرایط اضطراریFEMA</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Vazir', sans-serif;
-    }
-        /* فوتر */
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #f1f1f1;
-      margin-top: 50px;
-    }
- 
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت شرایط اضطراری FEMA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+    }
+
+    /* اطمینان از شکستن خطوط متن طولانی */
+    .content-text {
+      white-space: normal;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 2;
+    }
+
+    /* فوتر */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f1f1f1;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 min-h-screen p-4">
 
-  <!-- دکمه بازگشت - مثل popular/index.html -->
-  <div class="w-full flex justify-start px-4 mb-6">
-    <a href="../index.html" class="inline-flex items-center bg-gray-200 hover:bg-gray-300 transition px-4 py-2 rounded-full shadow-md text-sm">
-      <img src="../back.gif" alt="بازگشت" class="w-4 h-4 ml-2">
-      بازگشت
-    </a>
-  </div>
+  <!-- دکمه بازگشت -->
+  <div class="w-full flex justify-start px-4 mb-6">
+    <a href="../index.html" class="inline-flex items-center bg-gray-200 hover:bg-gray-300 transition px-4 py-2 rounded-full shadow-md text-sm">
+      <img src="../back.gif" alt="بازگشت" class="w-4 h-4 ml-2">
+      بازگشت
+    </a>
+  </div>
 
-  <!-- کارت -->
-  <div class="bg-gray-200 rounded-3xl shadow-2xl max-w-xl mx-auto overflow-hidden">
-    <!-- عکس اصلی -->
-    <img src="../image-card1.png" alt="تصویر کارت" class="w-full h-96 object-cover">
+  <!-- کارت -->
+  <div class="bg-gray-200 rounded-3xl shadow-2xl max-w-xl mx-auto overflow-hidden">
+    <!-- عکس اصلی -->
+    <img src="../image-card1.png" alt="تصویر کارت" class="w-full h-96 object-cover">
 
-    <!-- محتوا -->
-    <div class="p-6">
-      <!-- عنوان -->
-      <h1 class="text-2xl font-bold text-gray-900 mb-3">مدیریت شرایط اضطراریFEMA</h1>
+    <!-- محتوا -->
+    <div class="p-6">
+      <!-- عنوان -->
+      <h1 class="text-2xl font-bold text-gray-900 mb-3">مدیریت شرایط اضطراری FEMA</h1>
 
-      <!-- توضیح -->
-      <div class="text-sm text-gray-700 mb-6">
-براساس گزارش "آژانس فدرال مدیریت شرایط اضطراری" (FEMA) ایالات متحده، گام‌های تدوین برنامه عملیات اضطراری عبارتند از:
+      <!-- توضیح -->
+      <div class="text-sm text-gray-700 mb-6 content-text">
+        براساس گزارش "آژانس فدرال مدیریت شرایط اضطراری" (FEMA) ایالات متحده، گام‌های تدوین برنامه عملیات اضطراری عبارتند از:<br><br>
 
-تحقیق
-به عنوان اولین گام، نیاز است که تمامی قوانین، برنامه‌ها، موافقت‌نامه‌های بین سازمانی و دستورالعمل‌های موجود جمع‌آوری و مرور شوند. همچنین، تحلیل و برآورد خطرپذیری، تعیین منابع و امکانات مورد نیاز برای عملیات پاسخ و نیز توجه به جنبه‌های خاص هر منطقه (از نظر جغرافیایی و ...)، حائز اهمیت است.
+        <strong>تحقیق:</strong> به عنوان اولین گام، نیاز است که تمامی قوانین، برنامه‌ها، موافقت‌نامه‌های بین سازمانی و دستورالعمل‌های موجود جمع‌آوری و مرور شوند. همچنین، تحلیل و برآورد خطرپذیری، تعیین منابع و امکانات مورد نیاز برای عملیات پاسخ و نیز توجه به جنبه‌های خاص هر منطقه (از نظر جغرافیایی و ...)، حائز اهمیت است.<br><br>
 
-توسعه
-در این گام، ابتدا یک پیش‌نویس اولیه از برنامه و پیوست‌های خاص مخاطرات تهیه می‌شود. این پیش‌نویس در کمیته‌های تخصصی مورد ارزیابی قرار گرفته که در ادامه، نقشه‌ها و نمودارهای سازمانی مورد نیاز به آن اضافه می‌شود. سپس با اعمال آخرین تغییرات، نسخه نهایی برنامه عملیات اضطراری ارائه می‌شود.
-اعتبارسنجی
-مرور برنامه تدوین شده از طرف تمامی دستگاه‌های وظیفه‌مند و اجرای آن طی تمرینات در شرایط اضطراری شبیه‌سازی شده، منجر به ارائه پیشنهادهایی برای بهبود آن می‌شود.
+        <strong>توسعه:</strong> در این گام، ابتدا یک پیش‌نویس اولیه از برنامه و پیوست‌های خاص مخاطرات تهیه می‌شود. این پیش‌نویس در کمیته‌های تخصصی مورد ارزیابی قرار گرفته که در ادامه، نقشه‌ها و نمودارهای سازمانی مورد نیاز به آن اضافه می‌شود. سپس با اعمال آخرین تغییرات، نسخه نهایی برنامه عملیات اضطراری ارائه می‌شود.<br><br>
 
-نگهداری
-برنامه عملیات اضطراری یک برنامه پویا بوده به طوری که نگهداری این برنامه همواره تحت فرآیند اقدامات اصلاحی است. در واقع، با گذشت زمان و کسب تجارب جدید از وقوع بحران‌ها، این برنامه برای رفع مشکلات رخ داده در شرایط اضطراری، مورد ویرایش و به‌روزرسانی قرار می‌گیرد. براین اساس، نیاز است که حداقل به صورت سالانه، فرآیند بازنگری در این برنامه صورت پذیرد.
-        
-      </div>
+        <strong>اعتبارسنجی:</strong> مرور برنامه تدوین شده از طرف تمامی دستگاه‌های وظیفه‌مند و اجرای آن طی تمرینات در شرایط اضطراری شبیه‌سازی شده، منجر به ارائه پیشنهادهایی برای بهبود آن می‌شود.<br><br>
 
-<!-- فوتر -->
-  <footer>
-    طراح وب‌سایت: مهندس طاها سرگزی
-  </footer>
+        <strong>نگهداری:</strong> برنامه عملیات اضطراری یک برنامه پویا بوده به طوری که نگهداری این برنامه همواره تحت فرآیند اقدامات اصلاحی است. در واقع، با گذشت زمان و کسب تجارب جدید از وقوع بحران‌ها، این برنامه برای رفع مشکلات رخ داده در شرایط اضطراری، مورد ویرایش و به‌روزرسانی قرار می‌گیرد. براین اساس، نیاز است که حداقل به صورت سالانه، فرآیند بازنگری در این برنامه صورت پذیرد.
+      </div>
+    </div>
+  </div>
+
+  <!-- فوتر -->
+  <footer>
+    طراح وب‌سایت: مهندس طاها سرگزی
+  </footer>
 </body>
 </html>
