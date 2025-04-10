@@ -74,16 +74,18 @@
       flex-wrap: wrap;
     }
 
-    .filter-box {
+    a.filter-box {
       background-color: #e0e0e0;
       padding: 6px 14px;
       border-radius: 20px;
       font-size: 13px;
       cursor: pointer;
       transition: background-color 0.3s;
+      text-decoration: none; /* حذف خط زیر لینک */
+      color: inherit; /* استفاده از رنگ متن اصلی */
     }
 
-    .filter-box:hover {
+    a.filter-box:hover {
       background-color: #d0d0d0;
     }
 
@@ -150,6 +152,18 @@
       color: #555;
     }
 
+    /* حذف خط زیر لینک‌ها در کارت‌ها */
+    .card-section a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-section a .card-title,
+    .card-section a .card-text {
+      text-decoration: none;
+      color: inherit;
+    }
+
     /* ریسپانسیو */
     @media screen and (max-width: 768px) {
       .card {
@@ -170,7 +184,8 @@
         margin: 15px;
       }
     }
-        /* فوتر */
+
+    /* فوتر */
     footer {
       text-align: center;
       padding: 10px;
@@ -196,12 +211,12 @@
     <img src="search.gif" alt="جست‌وجو" />
   </div>
 
-<!-- فیلترهای سریع -->
-<div class="quick-filters">
-  <a href="/earthquake/top" class="filter-box">زلزله</a>
-  <a href="/flood/top" class="filter-box">سیل</a>
-  <a href="/storm/top" class="filter-box">طوفان</a>
-</div>
+  <!-- فیلترهای سریع -->
+  <div class="quick-filters">
+    <a href="/earthquake/top" class="filter-box">زلزله</a>
+    <a href="/flood/top" class="filter-box">سیل</a>
+    <a href="/storm/top" class="filter-box">طوفان</a>
+  </div>
 
   <!-- دانستنی ها -->
   <div class="section-header">
@@ -211,7 +226,7 @@
       <img src="more.png" alt="بیشتر" />
     </a>
   </div>
-  
+
   <div class="card-section">
     <a href="popular/card1/index.html" class="card">
       <img src="popular/image-card1.png" alt="تصویر ۱" />
@@ -229,6 +244,7 @@
       <div class="card-text">Disaster Risk Management; DRM</div>
     </a>
   </div>
+
   <!-- زلزله های استان-->
   <div class="section-header">
     <div class="section-title"> زلزله های استان(1404)</div>
@@ -244,7 +260,7 @@
       <div class="card-text"> گشت ،استان سیستان و بلوچستان  </div>
     </a> 
   </div>
-  
+
   <!-- فوتر -->
   <footer>
     طراح وب‌سایت: مهندس طاها سرگزی
