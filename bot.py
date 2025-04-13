@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[
         InlineKeyboardButton(
             text="باز کردن وب‌سایت",
-            web_app=WebAppInfo(url="https://bohran-site.vercel.app")
+            web_app=WebAppInfo(url="https://bohran-sit.vercel.app/index.html")
         )
     ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
