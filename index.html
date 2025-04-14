@@ -7,12 +7,18 @@
   <!-- فونت فارسی -->
   <link rel="stylesheet" href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" />
   <style>
+    html, body {
+      height: 100%;
+    }
+
     body {
       font-family: 'Vazir', sans-serif;
       background: #f5f5f5;
       margin: 0;
       padding: 0;
       direction: rtl;
+      display: flex;
+      flex-direction: column;
     }
 
     /* هدر */
@@ -43,16 +49,16 @@
 
     /* جست‌وجو */
     .search-box {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 8px 12px;
-  margin: 15px auto; /* وسط‌چینی از چپ و راست */
-  width: 100%;
-  max-width: 340px;
-  box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin: 15px auto;
+      width: 100%;
+      max-width: 340px;
+      box-sizing: border-box;
     }
 
     .search-box input {
@@ -106,7 +112,8 @@
       font-size: 13px;
       color: #555;
     }
- /* حذف خط زیر لینک‌ها در کارت‌ها */
+
+    /* حذف خط زیر لینک‌ها در کارت‌ها */
     .card-section a {
       text-decoration: none;
       color: inherit;
@@ -117,6 +124,7 @@
       text-decoration: none;
       color: inherit;
     }
+
     @media screen and (max-width: 768px) {
       .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -131,57 +139,65 @@
       }
     }
 
- /* فوتر */
+    /* فوتر */
     footer {
       text-align: center;
       padding: 10px 20px;
       background-color: #f1f1f1;
-      margin-top: 50px;
+      margin-top: 20px;
+    }
+
+    main {
+      flex: 1;
     }
   </style>
 </head>
 <body>
 
-    <!-- هدر -->
- <div class="header">
-  <a href="https://bohran.sbportal.ir/" style="text-decoration: none; color: inherit;">
-    <div class="header-text">
-      <h1> PDMOمدیریت بحران</h1>
-      <h2>استان سیستان و بلوچستان</h2>
-    </div>
-  </a>
-  <a href="https://bohran.sbportal.ir/">
-    <img src="Logo.png" class="logo" alt="لوگو" />
-  </a>
- </div>
-
-  <!-- جست‌وجو -->
-  <div class="search-box">
-    <input type="text" placeholder="جست و جو..." />
-    <img src="search.gif" alt="جست‌وجو" />
+  <!-- هدر -->
+  <div class="header">
+    <a href="https://bohran.sbportal.ir/" style="text-decoration: none; color: inherit;">
+      <div class="header-text">
+        <h1>PDMO مدیریت بحران</h1>
+        <h2>استان سیستان و بلوچستان</h2>
+      </div>
+    </a>
+    <a href="https://bohran.sbportal.ir/">
+      <img src="Logo.png" class="logo" alt="لوگو" />
+    </a>
   </div>
 
-  <!-- کارت‌ها -->
-  <div class="grid-container">
-     <a class="card" href="earthquake-top/index.html">
-      <img src="image-card1.png" alt="تصویر 1"/>
-      <div class="card-title">زمین لرزه</div>
-      <div class="card-text">زمین لرزه چیست؟</div>
-    </a>
-    <a class="card" href="earthquake/index.html">
-      <img src="image-card2.png" alt="تصویر 2"/>
-      <div class="card-title">زمین لرزه های </div>
-      <div class="card-text">استان سیستان و بلوچستان</div>
-    </a>
-    <a class="card" href="popular/index.html">
-      <img src="image-card2.png" alt="تصویر 2"/>
-      <div class="card-title">دانستی ها </div>
-      <div class="card-text"></div>
-    </a>
-  
+  <main>
+    <!-- جست‌وجو -->
+    <div class="search-box">
+      <input type="text" placeholder="جست و جو..." />
+      <img src="search.gif" alt="جست‌وجو" />
+    </div>
+
+    <!-- کارت‌ها -->
+    <div class="grid-container">
+      <a class="card" href="earthquake-top/index.html">
+        <img src="image-card1.png" alt="تصویر 1"/>
+        <div class="card-title">زمین لرزه</div>
+        <div class="card-text">زمین لرزه چیست؟</div>
+      </a>
+      <a class="card" href="earthquake/index.html">
+        <img src="image-card2.png" alt="تصویر 2"/>
+        <div class="card-title">زمین لرزه‌های</div>
+        <div class="card-text">استان سیستان و بلوچستان</div>
+      </a>
+      <a class="card" href="popular/index.html">
+        <img src="image-card2.png" alt="تصویر 2"/>
+        <div class="card-title">دانستی‌ها</div>
+        <div class="card-text"></div>
+      </a>
+    </div>
+  </main>
+
   <!-- فوتر -->
   <footer>
     طراح وب‌سایت: مهندس طاها سرگزی
   </footer>
+
 </body>
 </html>
