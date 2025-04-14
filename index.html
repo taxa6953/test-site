@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>اداره کل مدیریت بحران</title>
+  <title>مدیریت بحرانPDMO</title>
   <!-- فونت فارسی -->
   <link rel="stylesheet" href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" />
   <style>
@@ -41,20 +41,18 @@
       margin: 0;
     }
 
-    .logo {
-      width: 48px;
-      height: auto;
-    }
-/* جست‌وجو */
+    /* جست‌وجو */
     .search-box {
-      display: flex;
-      align-items: center;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 8px 12px;
-      margin: 15px 20px;
-      max-width: 400px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 15px auto; /* وسط‌چینی از چپ و راست */
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
     }
 
     .search-box input {
@@ -68,35 +66,6 @@
     .search-box img {
       width: 20px;
       height: 20px;
-    }
-    /* دکمه بازگشت */
-    .back-button-wrapper {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      padding: 10px 20px 0 20px;
-    }
-
-    .back-button {
-      display: inline-flex;
-      align-items: center;
-      background-color: #e0e0e0;
-      padding: 6px 12px;
-      border-radius: 20px;
-      text-decoration: none;
-      color: #000;
-      font-size: 14px;
-      transition: background-color 0.3s;
-    }
-
-    .back-button img {
-      width: 16px;
-      height: 16px;
-      margin-left: 6px;
-    }
-
-    .back-button:hover {
-      background-color: #ccc;
     }
 
     /* کارت‌ها */
@@ -137,7 +106,17 @@
       font-size: 13px;
       color: #555;
     }
+ /* حذف خط زیر لینک‌ها در کارت‌ها */
+    .card-section a {
+      text-decoration: none;
+      color: inherit;
+    }
 
+    .card-section a .card-title,
+    .card-section a .card-text {
+      text-decoration: none;
+      color: inherit;
+    }
     @media screen and (max-width: 768px) {
       .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -152,10 +131,10 @@
       }
     }
 
-    /* فوتر */
+ /* فوتر */
     footer {
       text-align: center;
-      padding: 10px;
+      padding: 10px 20px;
       background-color: #f1f1f1;
       margin-top: 50px;
     }
@@ -167,7 +146,7 @@
   <div class="header">
     <div class="header-right">
       <div class="header-text">
-        <h1>PDMOمدیریت بحران</h1>
+        <h1>مدیریت بحرانPDMO</h1>
         <h2>استان سیستان و بلوچستان</h2>
       </div>
     </div>
