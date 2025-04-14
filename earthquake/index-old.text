@@ -13,7 +13,6 @@
       padding: 0;
       direction: rtl;
     }
-
     /* هدر */
     .header {
       display: flex;
@@ -23,29 +22,24 @@
       padding: 10px 20px;
       border-bottom: 1px solid #ccc;
     }
-
     .header-right {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
     }
-
     .header-text h1 {
       font-size: 20px;
       margin: 0 0 5px 0;
     }
-
     .header-text h2 {
       font-size: 14px;
       color: #666;
       margin: 0;
     }
-
     .logo {
       width: 48px;
       height: auto;
     }
-
     /* دکمه بازگشت */
     .back-button-wrapper {
       width: 100%;
@@ -53,7 +47,6 @@
       justify-content: flex-start;
       padding: 10px 20px 0 20px;
     }
-
     .back-button {
       display: inline-flex;
       align-items: center;
@@ -65,17 +58,14 @@
       font-size: 14px;
       transition: background-color 0.3s;
     }
-
     .back-button img {
       width: 16px;
       height: 16px;
       margin-left: 6px;
     }
-
     .back-button:hover {
       background-color: #ccc;
     }
-
     /* کارت‌ها */
     .grid-container {
       display: grid;
@@ -83,7 +73,6 @@
       gap: 20px;
       padding: 20px;
     }
-
     .card {
       background: white;
       border-radius: 10px;
@@ -94,36 +83,30 @@
       color: inherit;
       transition: transform 0.2s;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .card img {
       width: 100%;
       border-radius: 8px;
     }
-
     .card-title {
       font-weight: bold;
       font-size: 14px;
       margin-top: 8px;
     }
-
     .card-text {
       font-size: 13px;
       color: #555;
     }
-
+    
     @media screen and (max-width: 768px) {
       .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       }
-
       .header-text h1 {
         font-size: 18px;
       }
-
       .header-text h2 {
         font-size: 13px;
       }
@@ -173,21 +156,9 @@
       <img src="image-card1.png" alt="تصویر 1" />
       <div class="card-title"> 1404/01/15 </div>
       <div class="card-text">گشت ،استان سیستان و بلوچستان </div>
-    </a>
-    
-    <a class="card" href="index-card.html">
-      <img src="image-card.png" alt="تصویر " />
-      <div class="card-title">مقصد ۵</div>
-      <div class="card-text">توضیح کوتاه درباره مقصد</div>
-    </a>
-    <!---
-    <a class="card" href="card6/index.html">
-      <img src="image-card6.png" alt="تصویر 6" />
-      <div class="card-title">مقصد ۶</div>
-      <div class="card-text">توضیح کوتاه درباره مقصد</div>
-    </a>
--->
+    </a>    
   </div>
+  
 <!-- فوتر -->
   <footer>
     طراح وب‌سایت: مهندس طاها سرگزی
